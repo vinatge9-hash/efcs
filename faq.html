@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:300,400,500,600,700&family=Roboto:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>FAQ - BrewOrigins</title>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body style="font-family: 'Playfair Display', sans-serif;" class='bg-[#F7F4EC] text-[#2D2D2D]'>
+  <header class='bg-white shadow'>
+    <nav class='max-w-7xl mx-auto px-4 py-6 flex items-center justify-between'>
+      <div class='flex items-center space-x-3'>
+        <img src='https://images.pexels.com/photos/34290260/pexels-photo-34290260.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='BrewOrigins Logo' class='h-8 w-auto'>
+        <span class='text-xl font-semibold' style='font-family: ;'>BrewOrigins</span>
+      </div>
+      <ul class='hidden md:flex space-x-6 text-sm'>
+        <li><a href='index.html' class='hover:text-[#6F4E37]'>Home</a></li>
+        <li><a href='about.html' class='hover:text-[#6F4E37]'>About</a></li>
+        <li><a href='shop.html' class='hover:text-[#6F4E37]'>Shop</a></li>
+        <li><a href='blog.html' class='hover:text-[#6F4E37]'>Blog</a></li>
+        <li><a href='contact.html' class='hover:text-[#6F4E37]'>Contact</a></li>
+        <li><a href='faq.html' class='hover:text-[#6F4E37]'>FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class='px-4'>
+    <!-- FAQ Hero -->
+    <section id='hero_faq' class='py-8'>
+      <div class='bg-white rounded-lg shadow p-6'>
+        <div class='flex items-center'>
+          <img src='https://images.unsplash.com/photo-1698319298199-b81a54ced28a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw3fHxmYXEtYmFubmVyLmpwZ3xlbnwwfDB8fHwxNzYwNjI3NTIwfDA&ixlib=rb-4.1.0&q=80&w=1080' alt='FAQ' class='w-16 h-16 rounded-full'>
+          <div class='ml-4'>
+            <h1 class='text-2xl font-bold' style='font-family: ; color:#6F4E37;'>FAQ</h1>
+            <p class='text-sm' style='font-family: ; color:#4A3A20;'>Frequently asked questions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accordions -->
+    <section id='accordions' class='py-6'>
+      <div class='grid md:grid-cols-2 gap-6'>
+        ${[
+          {q: 'What are the shipping options?', a: 'Standard, Expedited, and International.'},
+          {q: 'How long does shipping take?', a: 'Typically 3-7 business days domestic.'},
+          {q: 'What is the return policy?', a: '14-day return window with receipt.'},
+          {q: 'I forgot my password, how to reset?', a: 'Use the Forgot Password workflow on the login page.'},
+          {q: 'How do I brew the perfect cup?', a: 'Follow our guides in the Blog.'}
+        ].map((it, idx)=>`
+        <details class='bg-white rounded-lg shadow p-4'>
+          <summary class='font-semibold' style='font-family: ; color:#6F4E37;'>${it.q}</summary>
+          <p class='mt-2 text-sm text-[#4A3A20]'>${it.a}</p>
+        </details>
+        `).join('')}
+      </div>
+    </section>
+  </main>
+</body>
+</html>
