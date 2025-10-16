@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:300,400,500,600,700&family=Roboto:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>BrewOrigins Shop</title>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body style="font-family: 'Playfair Display', sans-serif;" class='bg-[#F7F4EC] text-[#2D2D2D]'>
+  <header class='bg-white shadow'>
+    <nav class='max-w-7xl mx-auto px-4 py-6 flex items-center justify-between'>
+      <div class='flex items-center space-x-3'>
+        <img src='https://images.pexels.com/photos/34237653/pexels-photo-34237653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='BrewOrigins Logo' class='h-8 w-auto'>
+        <span class='text-xl font-semibold' style='font-family: ;'>BrewOrigins</span>
+      </div>
+      <ul class='hidden md:flex space-x-6 text-sm'>
+        <li><a href='index.html' class='hover:text-[#6F4E37]'>Home</a></li>
+        <li><a href='about.html' class='hover:text-[#6F4E37]'>About</a></li>
+        <li><a href='shop.html' class='hover:text-[#6F4E37]'>Shop</a></li>
+        <li><a href='blog.html' class='hover:text-[#6F4E37]'>Blog</a></li>
+        <li><a href='contact.html' class='hover:text-[#6F4E37]'>Contact</a></li>
+        <li><a href='faq.html' class='hover:text-[#6F4E37]'>FAQ</a></li>
+      </ul>
+      <a href='shop.html' class='hidden md:inline-block bg-[#D97706] text-white px-4 py-2 rounded'>Shop</a>
+    </nav>
+  </header>
+
+  <main class='px-4'>
+    <!-- Shop Banner -->
+    <section id='shop_banner' class='py-8'>
+      <div class='bg-white rounded-lg shadow p-6'>
+        <div class='flex items-center justify-between flex-wrap'>
+          <div>
+            <h1 class='text-3xl font-bold' style='font-family: ; color:#6F4E37;'>Shop All Coffees</h1>
+            <p class='text-sm text-[#4A3A20]'>Explore our latest roasts and classic favorites.</p>
+          </div>
+          <div>
+            <input placeholder='Search coffees' class='border border-[#D2B48C] rounded px-3 py-2'>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sidebar + Grid -->
+    <section id='content' class='py-6'>
+      <div class='grid grid-cols-1 md:grid-cols-4 gap-6'>
+        <!-- Filters -->
+        <aside class='md:col-span-1'>
+          <div class='bg-white rounded-lg shadow p-4'>
+            <h4 class='font-semibold' style='font-family: ; color:#6F4E37;'>Filters</h4>
+            <div class='mt-3'>
+              <label class='block text-sm mb-1'>Origin</label>
+              <select class='w-full border border-[#D2B48C] rounded p-2'>
+                <option>Any</option>
+                <option> Ethiopia</option>
+                <option> Colombia</option>
+              </select>
+            </div>
+            <div class='mt-3'>
+              <label class='block text-sm mb-1'>Roast Level</label>
+              <select class='w-full border border-[#D2B48C] rounded p-2'>
+                <option>Any</option>
+                <option>Light</option>
+                <option>Medium</option>
+                <option>Dark</option>
+              </select>
+            </div>
+            <div class='mt-3'>
+              <label class='block text-sm mb-1'>Price</label>
+              <input type='range' min='5' max='40' class='w-full'>
+            </div>
+          </div>
+        </aside>
+        <!-- Product Grid -->
+        <div class='md:col-span-3'>
+          <div class='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+            <!-- Product Card (repeat 8 times) -->
+            ${Array.from({length:8}).map((_,i)=>`<div class='bg-white rounded-xl shadow-md border border-[#f1f1f1] overflow-hidden'>
+              <img src='https://images.pexels.com/photos/34320768/pexels-photo-34320768.jpeg?auto=compress&cs=tinysrgb&h=650&w=940}' alt='Coffee product' class='w-full h-40 object-cover'>
+              <div class='p-4'>
+                <span class='inline-block text-xs font-semibold tracking-wide text-[#D97706]'>Origin</span>
+                <h3 class='mt-2 text-sm' style='font-family: ;'>Coffee Blend ${i+1}</h3>
+                <p class='text-xs text-[#4A3A20] mt-1'>Notes & tasting profile.</p>
+                <div class='mt-3 flex items-center justify-between'>
+                  <span class='font-semibold' style='font-family: ;'>$${12+i}</span>
+                  <button class='bg-[#D97706] text-white px-3 py-2 rounded' aria-label='Add to cart'>Add to Cart</button>
+                </div>
+              </div>
+            </div>`).join('')}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart & Checkout (mock) -->
+    <section id='cart' class='py-6'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <div class='flex items-center justify-between bg-white rounded-lg shadow p-4'>
+          <span class='text-sm' style='font-family: ;'>Cart preview will appear here as you add items.</span>
+          <button class='bg-[#6F4E37] text-white px-4 py-2 rounded'>Checkout</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section id='newsletter_cta' class='py-12'>
+      <div class='max-w-2xl mx-auto text-center'>
+        <h2 class='text-2xl' style='font-family: ; color:#6F4E37;'>Newsletter Sign-Up</h2>
+        <p class='mt-2 text-sm' style='font-family: ; color:#4A3A20;'>Get 10% off your first order when you join.</p>
+        <form class='mt-4 flex justify-center'>
+          <input type='email' placeholder='Enter email' class='border border-[#D2B48C] rounded-l px-4 py-2' />
+          <button class='bg-[#D97706] text-white px-4 py-2 rounded-r' aria-label='Get discount'>Get 10% Off</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
