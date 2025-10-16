@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:300,400,500,600,700&family=Roboto:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>BrewOrigins Coffee</title>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body style="font-family: 'Playfair Display', sans-serif;" class='bg-[#F7F4EC] text-[#2D2D2D]'>
+  <!-- Header -->
+  <header class='bg-white shadow'>
+    <nav class='max-w-7xl mx-auto px-4 py-6 flex items-center justify-between'>
+      <div class='flex items-center space-x-3'>
+        <img src='https://images.pexels.com/photos/34261595/pexels-photo-34261595.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='BrewOrigins Logo' class='h-8 w-auto'>
+        <span class='text-xl font-semibold' style='font-family: ;'>BrewOrigins</span>
+      </div>
+      <ul class='hidden md:flex space-x-6 text-sm'>
+        <li><a href='index.html' class='hover:text-[#6F4E37]'>Home</a></li>
+        <li><a href='about.html' class='hover:text-[#6F4E37]'>About</a></li>
+        <li><a href='shop.html' class='hover:text-[#6F4E37]'>Shop</a></li>
+        <li><a href='blog.html' class='hover:text-[#6F4E37]'>Blog</a></li>
+        <li><a href='contact.html' class='hover:text-[#6F4E37]'>Contact</a></li>
+        <li><a href='faq.html' class='hover:text-[#6F4E37]'>FAQ</a></li>
+      </ul>
+      <a href='shop.html' class='hidden md:inline-block bg-[#D97706] text-white px-4 py-2 rounded'>Shop</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id='hero' class='container mx-auto px-4 py-12'>
+      <div class='grid md:grid-cols-2 items-center gap-8'>
+        <div>
+          <h1 class='text-5xl md:text-6xl font-extrabold leading-tight' style='font-family: ; color: #6F4E37;'>BrewOrigins Coffee</h1>
+          <p class='mt-4 text-lg' style='font-family: ; color: #4A3A20;'>Handcrafted coffees from origin to cup. Roasted in small batches with a passion for flavor.</p>
+          <div class='mt-6 flex space-x-4'>
+            <a href='shop.html' class='bg-[#D97706] text-white px-5 py-3 rounded shadow' aria-label='Shop Coffee'>Shop Coffee</a>
+            <a href='about.html' class='border border-[#6F4E37] text-[#6F4E37] px-5 py-3 rounded' aria-label='Visit Our Stores'>Visit Our Stores</a>
+          </div>
+        </div>
+        <div class='flex justify-center'>
+          <img src='https://images.pexels.com/photos/133222/pexels-photo-133222.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Flagship Coffee' class='w-full max-w-md rounded-lg shadow-lg'>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Coffees -->
+    <section id='featured_coffees' class='bg-white py-12'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <h2 class='text-3xl md:text-4xl font-bold' style='font-family: ; color:#6F4E37;'>Featured Coffees</h2>
+        <p class='text-[#4A3A20] mt-2 mb-6'>Seasonal roasts and signature blends</p>
+        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
+          <!-- Card 1 -->
+          <div class='bg-white rounded-xl shadow-md border border-[#f1f1f1] overflow-hidden'>
+            <img src='https://pixabay.com/get/g45879ee4d210e320b3e087c5dc6719db08359e1fe89fd91f02dd9bbc75b5558b7877a8ea0864936ad9e2c230a634e3a8e85a86f0ae4e0a6eab084c6fd303936a_640.jpg' alt='Boreal Morning' class='w-full h-48 object-cover'>
+            <div class='p-4'>
+              <span class='inline-block text-xs font-semibold tracking-wide text-[#D97706]'>ROAST</span>
+              <h3 class='mt-2 text-sm' style='font-family: ;'>Boreal Morning</h3>
+              <p class='text-xs text-[#4A3A20] mt-1'>Bright, chocolatey with citrus notes.</p>
+              <div class='mt-3 flex items-center justify-between'>
+                <span class='font-semibold' style='font-family: ;'>$16</span>
+                <button class='bg-[#D97706] text-white px-3 py-2 rounded' aria-label='Add Boreal Morning to cart'>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class='bg-white rounded-xl shadow-md border border-[#f1f1f1] overflow-hidden'>
+            <img src='https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Cascara Sunrise' class='w-full h-48 object-cover'>
+            <div class='p-4'>
+              <span class='inline-block text-xs font-semibold tracking-wide text-[#D97706]'>ROAST</span>
+              <h3 class='mt-2 text-sm' style='font-family: ;'>Cascara Sunrise</h3>
+              <p class='text-xs text-[#4A3A20] mt-1'>Floral & berry notes with a gentle finish.</p>
+              <div class='mt-3 flex items-center justify-between'>
+                <span class='font-semibold' style='font-family: ;'>$17</span>
+                <button class='bg-[#D97706] text-white px-3 py-2 rounded' aria-label='Add Cascara Sunrise to cart'>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class='bg-white rounded-xl shadow-md border border-[#f1f1f1] overflow-hidden'>
+            <img src='https://pixabay.com/get/gb051f269bb8836928339b42674c5bdd5178fc648fb0742d36b592a46424f74e7ff3eefa42c698875abdc9eb914120abefc411876a1d9480e5bc123eba47d3bbf_640.jpg' alt='Inara Espresso' class='w-full h-48 object-cover'>
+            <div class='p-4'>
+              <span class='inline-block text-xs font-semibold tracking-wide text-[#D97706]'>ESPRESSO</span>
+              <h3 class='mt-2 text-sm' style='font-family: ;'>Inara Espresso</h3>
+              <p class='text-xs text-[#4A3A20] mt-1'>Rich and chocolatey with caramel sweetness.</p>
+              <div class='mt-3 flex items-center justify-between'>
+                <span class='font-semibold' style='font-family: ;'>$18</span>
+                <button class='bg-[#D97706] text-white px-3 py-2 rounded' aria-label='Add Inara Espresso to cart'>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class='bg-white rounded-xl shadow-md border border-[#f1f1f1] overflow-hidden'>
+            <img src='https://images.pexels.com/photos/616354/pexels-photo-616354.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Valle Azul' class='w-full h-48 object-cover'>
+            <div class='p-4'>
+              <span class='inline-block text-xs font-semibold tracking-wide text-[#D97706]'>MEDIUM</span>
+              <h3 class='mt-2 text-sm' style='font-family: ;'>Valle Azul</h3>
+              <p class='text-xs text-[#4A3A20] mt-1'>Balanced with cocoa and citrus hints.</p>
+              <div class='mt-3 flex items-center justify-between'>
+                <span class='font-semibold' style='font-family: ;'>$15</span>
+                <button class='bg-[#D97706] text-white px-3 py-2 rounded' aria-label='Add Valle Azul to cart'>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Preview -->
+    <section id='our_story_preview' class='py-12'>
+      <div class='max-w-7xl mx-auto px-4 grid md:grid-cols-2 items-center gap-6'>
+        <div>
+          <img src='https://pixabay.com/get/g29b77d0f9ba7622c0dc3d3c74a2616b316272c811642dc56401024ecf8d390caffc34a0af14d8c57faf1aebe27c156406839b4fbc139060fcaa5679a20ace6e5_640.jpg' alt='Sourcing & roasting story' class='w-full rounded-lg'>
+        </div>
+        <div>
+          <h2 class='text-2xl md:text-3xl font-bold' style='font-family: ; color: #6F4E37;'>Our Story</h2>
+          <p class='mt-4' style='font-family: ; color: #4A3A20;'>BrewOrigins sources premier coffees with direct-trade partnerships, roasting in small batches to preserve flavor and personality.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Sign-Up -->
+    <section id='newsletter_signup' class='py-12'>
+      <div class='max-w-2xl mx-auto text-center'>
+        <h2 class='text-2xl' style='font-family: ; color:#6F4E37;'>Join Our Newsletter</h2>
+        <p class='mt-2 mb-4' style='font-family: ; color:#4A3A20;'>Get a welcome offer and updates on new roasts.</p>
+        <form class='mt-4 flex flex-col sm:flex-row items-center justify-center'>
+          <input type='email' placeholder='Enter your email' class='p-3 rounded border border-[#D2B48C] w-full sm:w-auto' required>
+          <button type='submit' class='ml-0 sm:ml-2 mt-3 sm:mt-0 bg-[#D97706] text-white px-5 py-3 rounded' aria-label='Join Newsletter'>Join the Newsletter</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Visit Us / Store Locator -->
+    <section id='store_locator' class='py-12 bg-white'>
+      <div class='max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-6 items-center'>
+        <div>
+          <h2 class='text-2xl font-bold' style='font-family: ; color:#6F4E37;'>Visit Us</h2>
+          <p class='mt-2' style='font-family: ; color:#4A3A20;'>Mon-Sun 7am–7pm. Find a store near you.</p>
+          <ul class='mt-4 text-sm' style='font-family: ; color:#4A3A20;'>
+            <li>Downtown Roastery - 123 Roast St.</li>
+            <li>Center City Café - 88 Bean Ave.</li>
+          </ul>
+        </div>
+        <div>
+          <img src='https://images.unsplash.com/photo-1563558603156-1e0f5d0592a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8bWFwJTIwcGxhY2Vob2xkZXJ8ZW58MHwwfHx8MTc2MDYyNzQ5OXww&ixlib=rb-4.1.0&q=80&w=1080' alt='Store map' class='w-full h-80 object-cover rounded-lg'>
+        </div>
+      </div>
+    </section>
+
+    <!-- Socials -->
+    <section id='social_media' class='py-12'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <h2 class='text-2xl font-bold' style='font-family: ; color:#6F4E37;'>Community & Socials</h2>
+        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4'>
+          <div class='bg-white rounded-lg shadow p-4'>
+            <img src='https://pixabay.com/get/g7599711ba2ce0177809be96996ce76531bc9a487bc207ea248d19240cb4bc34ce10b7e9ca41ce183c77dd95c35ed3cde0d77b537d2285230d81052ba940001f1_640.jpg' alt='Instagram' class='w-full h-32 object-cover rounded'>
+            <div class='mt-2 text-sm' style='font-family: ;'>@breworigins</div>
+          </div>
+          <div class='bg-white rounded-lg shadow p-4'>
+            <img src='https://images.pexels.com/photos/34261978/pexels-photo-34261978.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Instagram' class='w-full h-32 object-cover rounded'>
+            <div class='mt-2 text-sm' style='font-family: ;'>@breworigins_coffee</div>
+          </div>
+          <div class='bg-white rounded-lg shadow p-4'>
+            <img src='https://images.unsplash.com/photo-1728818788703-fefdc5a679ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxfHxpbnN0YWdyYW0tcGxhY2Vob2xkZXItM3xlbnwwfDB8fHwxNzYwNjI3NTAxfDA&ixlib=rb-4.1.0&q=80&w=1080' alt='Instagram' class='w-full h-32 object-cover rounded'>
+            <div class='mt-2 text-sm' style='font-family: ;'>@breworigins_love</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class='bg-white mt-12 py-8'>
+      <div class='max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6'>
+        <div>
+          <strong style='font-family: ; color:#6F4E37;'>BrewOrigins Coffee</strong>
+          <p class='mt-2 text-sm' style='font-family: ; color:#4A3A20;'>Cafe & Roastery</p>
+        </div>
+        <div>
+          <div class='text-sm font-semibold' style='font-family: ; color:#6F4E37;'>Quick Links</div>
+          <ul class='mt-2 text-xs'>
+            <li>About</li>
+            <li>Shop</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div>
+          <div class='text-sm font-semibold' style='font-family: ; color:#6F4E37;'>Policies</div>
+          <ul class='mt-2 text-xs'>
+            <li>Shipping</li>
+            <li>Returns</li>
+            <li>Terms</li>
+          </ul>
+        </div>
+        <div>
+          <div class='text-sm font-semibold' style='font-family: ; color:#6F4E37;'>Contact</div>
+          <p class='mt-2 text-xs' style='font-family: ; color:#4A3A20;'>hello@breOrigins.example</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
