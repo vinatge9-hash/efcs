@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:300,400,500,600,700&family=Roboto:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Contact - BrewOrigins</title>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body style="font-family: 'Playfair Display', sans-serif;" class='bg-[#F7F4EC] text-[#2D2D2D]'>
+  <header class='bg-white shadow'>
+    <nav class='max-w-7xl mx-auto px-4 py-6 flex items-center justify-between'>
+      <div class='flex items-center space-x-3'>
+        <img src='https://images.pexels.com/photos/7661185/pexels-photo-7661185.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='BrewOrigins Logo' class='h-8 w-auto'>
+        <span class='text-xl font-semibold' style='font-family: ;'>BrewOrigins</span>
+      </div>
+      <ul class='hidden md:flex space-x-6 text-sm'>
+        <li><a href='index.html' class='hover:text-[#6F4E37]'>Home</a></li>
+        <li><a href='about.html' class='hover:text-[#6F4E37]'>About</a></li>
+        <li><a href='shop.html' class='hover:text-[#6F4E37]'>Shop</a></li>
+        <li><a href='blog.html' class='hover:text-[#6F4E37]'>Blog</a></li>
+        <li><a href='contact.html' class='hover:text-[#6F4E37]'>Contact</a></li>
+        <li><a href='faq.html' class='hover:text-[#6F4E37]'>FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class='px-4'>
+    <!-- Hero -->
+    <section id='hero_contact' class='py-8'>
+      <div class='bg-white rounded-lg shadow p-6'>
+        <div class='grid md:grid-cols-2 gap-6 items-center'>
+          <div>
+            <h1 class='text-3xl font-bold' style='font-family: ; color:#6F4E37;'>Get in Touch</h1>
+            <p class='mt-2 text-sm' style='font-family: ; color:#4A3A20;'>We’d love to hear from you. Fill out the form and we’ll get back to you soon.</p>
+          </div>
+          <div>
+            <img src='https://images.pexels.com/photos/34257678/pexels-photo-34257678.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Contact banner' class='w-full rounded-lg'>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form & Store Info -->
+    <section id='contact_form' class='py-8'>
+      <div class='grid md:grid-cols-2 gap-6'>
+        <form class='bg-white rounded-lg shadow p-6'>
+          <div class='grid md:grid-cols-2 gap-4'>
+            <input placeholder='Name' class='border border-[#D2B48C] rounded w-full p-2'>
+            <input placeholder='Email' class='border border-[#D2B48C] rounded w-full p-2'>
+          </div>
+          <textarea placeholder='Message' class='mt-3 border border-[#D2B48C] rounded w-full p-2 h-32'></textarea>
+          <button class='mt-3 bg-[#6F4E37] text-white px-4 py-2 rounded' type='submit'>Send Message</button>
+        </form>
+        <aside class='bg-white rounded-lg shadow p-6'>
+          <h4 class='font-semibold' style='font-family: ; color:#6F4E37;'>Store Location & Hours</h4>
+          <p class='mt-2 text-sm' style='font-family: ; color:#4A3A20;'>123 Spark Ave, Roast City</p>
+          <p class='mt-1 text-sm' style='font-family: ; color:#4A3A20;'>Mon–Sun 7am–7pm</p>
+          <p class='mt-1 text-sm' style='font-family: ; color:#4A3A20;'>(555) 012-3456</p>
+          <img src='https://images.pexels.com/photos/3935702/pexels-photo-3935702.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Store map' class='mt-4 w-full h-40 object-cover rounded'>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Support & FAQs & Socials -->
+    <section id='support' class='py-6'>
+      <div class='grid md:grid-cols-2 gap-6'>
+        <div class='bg-white rounded-lg shadow p-6'>
+          <h4 class='font-semibold' style='font-family: ; color:#6F4E37;'>Support & FAQs</h4>
+          <p class='mt-2 text-sm' style='font-family: ; color:#4A3A20;'>Phone: (555) 012-3456</p>
+          <p class='text-sm mt-1' style='font-family: ; color:#4A3A20;'>Email: support@example.com</p>
+        </div>
+        <div class='bg-white rounded-lg shadow p-6'>
+          <h4 class='font-semibold' style='font-family: ; color:#6F4E37;'>Social</h4>
+          <div class='mt-2 flex space-x-3'>
+            <span class='text-xs'>Instagram</span>
+            <span class='text-xs'>Facebook</span>
+            <span class='text-xs'>Twitter</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
