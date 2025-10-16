@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:300,400,500,600,700&family=Roboto:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>BrewOrigins Blog</title>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body style="font-family: 'Playfair Display', sans-serif;" class='bg-[#F7F4EC] text-[#2D2D2D]'>
+  <header class='bg-white shadow'>
+    <nav class='max-w-7xl mx-auto px-4 py-6 flex items-center justify-between'>
+      <div class='flex items-center space-x-3'>
+        <img src='https://pixabay.com/get/gd87f89808dca7515c17ce386611b097c17d24990192371f78c3f5e4ae5b30f23acc517cdd047af25cc4ead405de7b9d8d10d4d80746835b30b31a4db687cb07f_640.jpg' alt='BrewOrigins Logo' class='h-8 w-auto'>
+        <span class='text-xl font-semibold' style='font-family: ;'>BrewOrigins</span>
+      </div>
+      <ul class='hidden md:flex space-x-6 text-sm'>
+        <li><a href='index.html' class='hover:text-[#6F4E37]'>Home</a></li>
+        <li><a href='about.html' class='hover:text-[#6F4E37]'>About</a></li>
+        <li><a href='shop.html' class='hover:text-[#6F4E37]'>Shop</a></li>
+        <li><a href='blog.html' class='hover:text-[#6F4E37]'>Blog</a></li>
+        <li><a href='contact.html' class='hover:text-[#6F4E37]'>Contact</a></li>
+        <li><a href='faq.html' class='hover:text-[#6F4E37]'>FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Blog -->
+    <section id='hero_blog' class='container mx-auto px-4 py-12'>
+      <div class='grid md:grid-cols-2 gap-6 items-center'>
+        <div>
+          <h1 class='text-4xl font-bold' style='font-family: ; color:#6F4E37;'>Coffee Journal</h1>
+          <p class='mt-2 text-sm' style='font-family: ; color:#4A3A20;'>Latest posts on brewing, origins, and cafe culture.</p>
+        </div>
+        <div>
+          <img src='https://pixabay.com/get/gf1c91548fdff31feb30df9119953f497c40559f15c078b47f39ca12a82a620c181a7b500241b38c7ae3a3fc496709e30_640.jpg' alt='Blog hero' class='w-full rounded-lg'>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Posts Grid -->
+    <section id='latest_posts' class='py-6'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <div class='grid grid-cols-1 md:grid-cols-3 gap-6'>
+          ${Array.from({length:6}).map((_,i)=>`
+          <article class='bg-white rounded-lg shadow p-4'>
+            <img src='https://images.unsplash.com/photo-1598455067068-dd4ef9bf0bdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxfHxibG9nLXBvc3QtJTI0JTdCaSUyQjF8ZW58MHwwfHx8MTc2MDYyNzUxNHww&ixlib=rb-4.1.0&q=80&w=1080}' alt='Blog post ${i+1}' class='w-full h-40 object-cover rounded'>
+            <h3 class='mt-2 text-sm font-semibold' style='font-family: ;'>Blog Post ${i+1}</h3>
+            <p class='text-xs text-[#6F4E37]'>A quick overview of a coffee topic.</p>
+          </article>
+          `).join('')}
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section id='categories' class='py-6'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <h3 class='text-xl font-semibold' style='font-family: ; color:#6F4E37;'>Categories</h3>
+        <div class='mt-2 flex flex-wrap gap-2'>
+          <span class='px-2 py-1 border rounded text-xs' style='border-color:#D2B48C; font-family: ; color:#6F4E37;'>Brewing</span>
+          <span class='px-2 py-1 border rounded text-xs' style='border-color:#D2B48C; font-family: ; color:#6F4E37;'>Origins</span>
+          <span class='px-2 py-1 border rounded text-xs' style='border-color:#D2B48C; font-family: ; color:#6F4E37;'>Roasting</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section id='featured_post' class='py-8'>
+      <div class='max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-6 items-center'>
+        <div>
+          <h2 class='text-2xl font-bold' style='font-family: ; color:#6F4E37;'>Featured Article</h2>
+          <p class='mt-2' style='font-family: ; color:#4A3A20;'>In-depth coffee guide or interview with a master roaster.</p>
+        </div>
+        <div>
+          <img src='https://pixabay.com/get/gbceba02a9ce0958780ce82e663257e11bdab40e0cd8d0091a6e56ff233eb2afa7348672179e83413ca2fb5f76818b4877a187480695a8e862079c2f1c8134a30_640.jpg' alt='Featured post' class='w-full rounded-lg'>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id='newsletter' class='py-8'>
+      <div class='max-w-2xl mx-auto text-center'>
+        <h3 class='text-2xl' style='font-family: ; color:#6F4E37;'>Subscribe for Updates</h3>
+        <form class='mt-4 flex justify-center'>
+          <input type='email' placeholder='Email' class='border border-[#D2B48C] rounded-l px-4 py-2'>
+          <button class='bg-[#D97706] text-white px-4 py-2 rounded-r' aria-label='Subscribe'>Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
